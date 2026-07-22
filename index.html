@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Navigator SK Mawar</title>
+<title>Galeri Murid SK Mawar</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<div class="overlay">
+<!-- Paparan Depan -->
+
+<div id="home">
 
 <img src="gambar/logo.png" class="logo">
 
-<h1>NAVIGATOR SK MAWAR</h1>
+<h1>GALERI MURID</h1>
 
-<input
-type="text"
-id="search"
-placeholder="Cari lokasi...">
+<h2>SK MAWAR</h2>
 
-<button onclick="cariLokasi()">
-Cari
+<button onclick="masuk()">
+MASUK
 </button>
 
-<div id="hasil"></div>
+</div>
+
+<!-- Galeri -->
+
+<div id="galeri" style="display:none;">
+
+<h1>Senarai Murid</h1>
+
+<div id="senarai" class="grid"></div>
 
 </div>
+
+<!-- Popup -->
+
+<div id="popup" class="popup">
+
+<div class="content">
+
+<span onclick="tutup()">&times;</span>
+
+<img id="gambarPopup">
+
+<h2 id="nama"></h2>
+
+<p id="kelas"></p>
+
+<p id="umur"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
